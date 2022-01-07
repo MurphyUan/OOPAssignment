@@ -1,1 +1,121 @@
-<mxfile host="app.diagrams.net" modified="2022-01-07T22:42:23.394Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36" version="16.2.4" etag="iorRCD3b2jseWO7sqy43" type="github"><diagram id="wwRVtVKq4c4ivOIOonnz">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-01-07T23:27:00.191Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36" etag="WjSBre5iRTn99BbPeSsy" version="16.2.4" type="github">
+  <diagram id="wwRVtVKq4c4ivOIOonnz" name="Page-1">
+    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="UafEL13cG-1Q2lDrAkBh-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;dashed=1;endArrow=none;endFill=0;startArrow=block;startFill=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="UafEL13cG-1Q2lDrAkBh-1" target="UafEL13cG-1Q2lDrAkBh-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="665" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UafEL13cG-1Q2lDrAkBh-1" value="&lt;&lt;interface&gt;&gt;&#xa;DecrypterInt" style="swimlane;startSize=40;" vertex="1" parent="1">
+          <mxGeometry x="395" y="400" width="360" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="UafEL13cG-1Q2lDrAkBh-2" value="+ loadFrequencies() : void&lt;br&gt;+ manualDecryption(String filename) : void&lt;br&gt;+ fileDecryption(String filename) : void&lt;br&gt;+ checkKeys() : KeyRecord&lt;br&gt;+ writeDecryptedText(KeyRecord key, String cypherText) : void&lt;br&gt;+ writeDecryptedFile(KeyRecord key, String filename) : void&lt;br&gt;+ shutdownApplication() : void" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="UafEL13cG-1Q2lDrAkBh-1">
+          <mxGeometry x="5" y="50" width="350" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="UafEL13cG-1Q2lDrAkBh-4" value="Runner" style="swimlane;startSize=40;" vertex="1" parent="1">
+          <mxGeometry x="475" y="200" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="UafEL13cG-1Q2lDrAkBh-5" value="+ void go()" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="UafEL13cG-1Q2lDrAkBh-4">
+          <mxGeometry x="65" y="50" width="70" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="UafEL13cG-1Q2lDrAkBh-6" value="&lt;&lt;interface&gt;&gt;&#xa;AttributeInt" style="swimlane;startSize=45;" vertex="1" parent="1">
+          <mxGeometry x="35" y="430" width="290" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="UafEL13cG-1Q2lDrAkBh-7" value="+ fillMap() : ConcurrentHashMap&amp;lt;Integer, Integer&amp;gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="UafEL13cG-1Q2lDrAkBh-6">
+          <mxGeometry x="5" y="60" width="280" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="UafEL13cG-1Q2lDrAkBh-8" value="&lt;&lt;interface&gt;&gt;&#xa;FrequencyInt" style="swimlane;startSize=40;" vertex="1" parent="1">
+          <mxGeometry x="845" y="430" width="290" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="UafEL13cG-1Q2lDrAkBh-9" value="+ fillMap() : ConcurrentHashMap&amp;lt;Integer, Float&amp;gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="UafEL13cG-1Q2lDrAkBh-8">
+          <mxGeometry x="10" y="60" width="270" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="UafEL13cG-1Q2lDrAkBh-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=block;endFill=0;dashed=1;" edge="1" parent="1" source="UafEL13cG-1Q2lDrAkBh-10" target="UafEL13cG-1Q2lDrAkBh-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UafEL13cG-1Q2lDrAkBh-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;dashed=1;startArrow=none;startFill=0;endArrow=block;endFill=0;" edge="1" parent="1" source="UafEL13cG-1Q2lDrAkBh-1" target="UafEL13cG-1Q2lDrAkBh-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UafEL13cG-1Q2lDrAkBh-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;startArrow=none;startFill=0;endArrow=block;endFill=0;" edge="1" parent="1" source="UafEL13cG-1Q2lDrAkBh-1" target="UafEL13cG-1Q2lDrAkBh-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UafEL13cG-1Q2lDrAkBh-10" value="DecrypterImpl" style="swimlane;startSize=40;" vertex="1" parent="1">
+          <mxGeometry x="395" y="600" width="360" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="UafEL13cG-1Q2lDrAkBh-11" value="+ loadFrequencies() : void&lt;br&gt;+ manualDecryption(String filename) : void&lt;br&gt;+ fileDecryption(String filename) : void&lt;br&gt;+ checkKeys() : KeyRecord&lt;br&gt;+ writeDecryptedText(KeyRecord key, String cypherText) : void&lt;br&gt;+ writeDecryptedFile(KeyRecord key, String filename) : void&lt;br&gt;+ shutdownApplication() : void" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="UafEL13cG-1Q2lDrAkBh-10">
+          <mxGeometry x="5" y="50" width="350" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="UafEL13cG-1Q2lDrAkBh-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;dashed=1;startArrow=none;startFill=0;endArrow=block;endFill=0;" edge="1" parent="1" source="UafEL13cG-1Q2lDrAkBh-14" target="UafEL13cG-1Q2lDrAkBh-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UafEL13cG-1Q2lDrAkBh-14" value="AttributeImpl" style="swimlane;startSize=45;" vertex="1" parent="1">
+          <mxGeometry x="35" y="600" width="290" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="UafEL13cG-1Q2lDrAkBh-15" value="+ fillMap() : ConcurrentHashMap&amp;lt;Integer, Integer&amp;gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="UafEL13cG-1Q2lDrAkBh-14">
+          <mxGeometry x="5" y="60" width="280" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="UafEL13cG-1Q2lDrAkBh-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;dashed=1;startArrow=none;startFill=0;endArrow=block;endFill=0;" edge="1" parent="1" source="UafEL13cG-1Q2lDrAkBh-16" target="UafEL13cG-1Q2lDrAkBh-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UafEL13cG-1Q2lDrAkBh-16" value="FrequencyImpl" style="swimlane;startSize=40;" vertex="1" parent="1">
+          <mxGeometry x="845" y="600" width="290" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="UafEL13cG-1Q2lDrAkBh-17" value="+ fillMap() : ConcurrentHashMap&amp;lt;Integer, Float&amp;gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="UafEL13cG-1Q2lDrAkBh-16">
+          <mxGeometry x="10" y="60" width="270" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="UafEL13cG-1Q2lDrAkBh-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;dashed=1;startArrow=none;startFill=0;endArrow=block;endFill=0;" edge="1" parent="1" source="UafEL13cG-1Q2lDrAkBh-18" target="UafEL13cG-1Q2lDrAkBh-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UafEL13cG-1Q2lDrAkBh-18" value="&lt;&lt;record&gt;&gt;&#xa;KeyRecord" style="swimlane;startSize=40;" vertex="1" parent="1">
+          <mxGeometry x="125" y="230" width="200" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="UafEL13cG-1Q2lDrAkBh-22" value="+ key : int&lt;br&gt;+ score : double" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="UafEL13cG-1Q2lDrAkBh-18">
+          <mxGeometry x="50" y="50" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="UafEL13cG-1Q2lDrAkBh-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;startArrow=none;startFill=0;endArrow=block;endFill=0;" edge="1" parent="1" source="UafEL13cG-1Q2lDrAkBh-20" target="UafEL13cG-1Q2lDrAkBh-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UafEL13cG-1Q2lDrAkBh-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;dashed=1;startArrow=none;startFill=0;endArrow=block;endFill=0;entryX=0.769;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="UafEL13cG-1Q2lDrAkBh-20" target="UafEL13cG-1Q2lDrAkBh-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="760" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UafEL13cG-1Q2lDrAkBh-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;startArrow=none;startFill=0;endArrow=block;endFill=0;" edge="1" parent="1" source="UafEL13cG-1Q2lDrAkBh-20" target="UafEL13cG-1Q2lDrAkBh-6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="760" y="295" />
+              <mxPoint x="760" y="160" />
+              <mxPoint x="80" y="160" />
+              <mxPoint x="80" y="360" />
+              <mxPoint x="180" y="360" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UafEL13cG-1Q2lDrAkBh-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;dashed=1;startArrow=none;startFill=0;endArrow=block;endFill=0;" edge="1" parent="1" source="UafEL13cG-1Q2lDrAkBh-20" target="UafEL13cG-1Q2lDrAkBh-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="UafEL13cG-1Q2lDrAkBh-20" value="&lt;&lt;record&gt;&gt;&#xa;StringRecord" style="swimlane;startSize=40;" vertex="1" parent="1">
+          <mxGeometry x="840" y="240" width="200" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="UafEL13cG-1Q2lDrAkBh-21" value="+ value : String&lt;br&gt;+ poison : boolean" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="UafEL13cG-1Q2lDrAkBh-20">
+          <mxGeometry x="45" y="50" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="UafEL13cG-1Q2lDrAkBh-32" value="&lt;&lt;interface&gt;&gt;&#xa;FileReaderInt" style="swimlane;startSize=40;" vertex="1" parent="1">
+          <mxGeometry x="840" y="40" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="UafEL13cG-1Q2lDrAkBh-33" value="+ readFile() : boolean" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="875" y="90" width="130" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="UafEL13cG-1Q2lDrAkBh-35" value="FileReaderImpl" style="swimlane;startSize=40;" vertex="1" parent="1">
+          <mxGeometry x="540" y="40" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="UafEL13cG-1Q2lDrAkBh-36" value="+ readFile() : boolean" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="575" y="90" width="130" height="20" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
